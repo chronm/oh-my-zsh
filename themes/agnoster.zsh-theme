@@ -77,7 +77,7 @@ prompt_end() {
   if [[ -n $CURRENT_BG ]]; then
     echo -n " %{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
   else
-    echo -n "%{%k%}"
+    echo -n "%{%k%}"	
   fi
   echo -n "%{%f%}"
   CURRENT_BG=''
@@ -199,7 +199,7 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue $CURRENT_FG '%~'
+  prompt_segment blue default '%~'
 }
 
 # Virtualenv: current working virtualenv
